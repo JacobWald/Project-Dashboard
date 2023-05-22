@@ -1,0 +1,16 @@
+.story {
+  text-align: center;
+}
+
+.storyInfo h1 {
+  font-weight: bold;
+}
+
+.storyInfo div img {
+  width: 800px;
+  height: 500px;
+}
+
+.by {
+  font-weight: bold;
+}
