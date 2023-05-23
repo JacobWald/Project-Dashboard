@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import TriviaPage from "./pages/TriviaPage.js";
 import WEATHER_NEWS from "./pages/WEATHER_NEWS.js";
 import MenuPage from "./pages/MenuPage.js";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <nav style={{ textAlign: "center" }}>
         <h1>Project Directory</h1>
         <Link to="/">Dashboard</Link>
@@ -23,7 +23,7 @@ function App() {
         <Route path="trivia" element={<TriviaPage />}></Route>
         <Route path="menu" element={<MenuPage />}></Route>
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
