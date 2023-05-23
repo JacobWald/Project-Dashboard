@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import "./Report.css";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import { Link } from "react-router-dom";
 
 function Report() {
   const [city, setCity] = useState("");
@@ -69,7 +68,6 @@ function Report() {
       <header>
         <h1>Weather & News Report</h1>
       </header>
-      <Link to="/">Project Dashboard</Link>
       <p style={{ fontWeight: "bold" }}>
         Valid Entries: United States (City + State Code, City + State Code +
         Country Code, Zip Code + Country Code), Outside United States (City +

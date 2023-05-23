@@ -1,7 +1,6 @@
 import Question from "./question.js";
 import React, { useState, useEffect } from "react";
 import { decode } from "html-encoder-decoder";
-import { Link } from "react-router-dom";
 
 export default function Trivia() {
   const [questions, setQuestions] = useState([]);
@@ -22,7 +21,6 @@ export default function Trivia() {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Triva Game!</h1>
-      <Link to="/">Project Dashboard</Link>
       <Question questionList={decodedQuestions} />
     </>
   );

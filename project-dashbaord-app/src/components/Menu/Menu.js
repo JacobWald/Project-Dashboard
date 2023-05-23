@@ -1,5 +1,4 @@
 import Meal from "./Meal.js";
-import { Link } from "react-router-dom";
 
 export default function Menu() {
   const menuItems = {
@@ -22,8 +21,6 @@ export default function Menu() {
   return (
     <>
       <h1>Menu</h1>
-      <Link to="/">Project Dashboard</Link>
-      <p></p>
       <button>Show Only Vegetarian</button>
       <Meal menu={menuItems} />
     </>
